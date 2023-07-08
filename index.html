@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="styls.css">
+  <title>My Clicks</title>
+ 
+</head> 
+
+<body>
+  <nav style="position: fixed; width: 100%; z-index: 2; " class="navbar navbar-expand-sm navbar-custom mt-0 ">
+    <a class="navbar-brand" href="#">My Clicks</a>
+    <button style="background-color: #4CAF50; box-shadow: 2px 2px 2px;" class="navbar-toggler" type="button"
+      data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section style="padding-top: 260px;" class="hero-banner ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 banner-content">
+          <h1 class="animate__animated animate__bounce" >Welcome to My Clicks</h1>
+          <p>"Journey into Visual Poetry: A Collection of Stunning Photographs"</p>
+          <a href class="btn btn-success">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="banner-image " style="background-image: url('204.jpg');">
+      <img src="image/im22.jpg" alt="Image 1">
+      <img src="image/im33.jpg" alt="Image 2">
+      <img src="image/204.jpg" alt="Image 3">
+    </div>
+  </section>
+  <section id="Gallery" class="pt-2">
+    <div class="container-fluid">
+      <h2 class="text-center  font-weight-bold">Gallery</h2>
+      <div class="row">
+        <div class="col-md-4 p-2">
+          <div data-aos="fade-down-right" class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="image/203.jpg" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Nature</h5>
+              <p class="card-text"> "Birds in Flight: Witness the elegance and freedom of avian creatures as they soar
+                through the skies in this captivating gallery."</p>
+              <a href="#" class="btn btn-custom">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div data-aos="fade-down-right" class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="image/life.jpg" class="card-img-top" alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title">lifestyles</h5>
+              <p class="card-text"> "Celebrating Life's Pleasures: Indulge in the finer things and find inspiration for
+                your own stylish journey."</p>
+              <a href="#" class="btn btn-custom">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div data-aos="fade-down-right" class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="image/histry.jpg" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <h5 class="card-title">History</h5>
+              <p class="card-text">"Unveiling the Past: Discover the untold stories and forgotten chapters of history
+                through compelling imagery."</p>
+              <a href="#" class="btn btn-custom">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 p-2">
+          <div data-aos="fade-down-right" class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="image/36002.jpg" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <h5 class="card-title">360 Degree</h5>
+              <p class="card-text"> "360° Nature: Surround yourself with the awe-inspiring beauty of nature in fully
+                immersive panoramic views."</p>
+              <a href="#" class="btn btn-custom">More</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div data-aos="fade-down-right" class="card shadow p-3 mb-5 bg-white rounded">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAkFBMVEX19/kMEx8AAAD////4+vzu8PL6/P4ACBgAAA4GDxzFx8rX2dsAABMAABAAABIVGyV7foNBRUwACxkAAAh0d3yfoqYAAAU7P0fLztFeYWe8v8Ln6ewqLziKjJCpq6+usbVJTFPc3+JjZmxSVVsyNj6BhIkfJC4cIi1rbnQ/Q0s2OkKQk5fo6eq4urycnaBYW2BFI9qZAAAGxUlEQVR4nO2a2XriOBCFrZItWSCzyOwYMJshEML7v92UjFk6HUhfNJn5mPNfdAO2Feuo6lTJEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAC6FUdB+l/u3b+wHCoNum++QzFf7bt/hswvGOtLiPpnb08iIUjQcKeNL2i2ugJvSNBELQx2t7giLzrQYue2kNwsH3YcCBMH/lbFC1P9KgDg3+RxoYG8cN/YU/fKeBkvKzY0gp/4ZuX4z817nRwFBzOFlvc+v8a7r1yk8aKOb2A3UYLlq/3mq4XRwfCRfy5OS5Bb1/nuoOh08vSlcNnBnJkqAwRsxq72/ujgZq1u12xzefqC6lffnLuKGJafBgbuPudrFdH/yZQTS/f16LqCPvHv47XDQw9l1WrJxdlv/d0yDjKJncrA5roNufNGiaBxqoKVFik5QOSo0Ete+utGrFyc9pQF2e9vvhUIt48rTlN5vYfalBOCcOGnFzZ/c0uDc1NSKjy80Ia9AlO7w7yx/WgMOgVt7XsBDLD9ZgeNy5rzRQ+55ru8sqKzatbu+kQShVpEov9BrUg+qNPxCMo4u7qdzq5ag+mA0PSu5Tu5DXi88WwXvZMRtPpYF3jx/QgJ18Wvqg1asqKWb0pQa7RntGcUue7nU0LJrClBrIwaIQ2bYuSw3Mqmmy1thPSo07G2vao7MI1tBYhTzPYL5i99m0syhQ804mimGtHFaN15mxdiZPGsjJW3v5NGu8alDnSU8bfgvpskcahHWK12Myqb+nMFqS1YkWXgPZpUTHOqaZ9BoI/tz1TF0Fqk6pThuautU8hEnX5YrzYMZ7EUVyRDFf0KC9X/YDpU5bzs9SA16c5Imt6kWDdFJO+9AnY4ranF/Wauv4Cw3UJKWa7Gvyq6ryVJBZ9B1rwFku4mJreJHroY+DbJiR0E3eeTe1zdZH4tUvx5FbviqbBspr4MdvUjAnvnBRxMJ7xMD7Rf9YVBrwW6o/r0JeayNPrGQUO0NrfkF0luDXOMi0CNRHr7GV3t95U+kDxmuw0uxuMuzreCtLTywjiY9Pye14wFZcBUI4NrFwlH5wPsh1zH6g5LChd5yOi8RH4UrrHS+DCr0ftCLrqPbEJuGmR6JTJMh3bcqguGkYbzTgTVbSkpKTgTiHc80T8FKwBrykPmC96YtInWqjHFp79P90DofDJE62J2cLowXFxlCfY6IVl3WBL+bA8jWHxuVI5aRZA7t9sz67fkQDkdLk/WQDDzTgdXP5YrEwgmYq4oZyqioNDiS8R5ymUWnA8aJzWTgRc8HpuV6lAdeAeocagmuwKjUIKwG9VdCAVax263yUPfpB8fzbGrBTcVMmZdR7FAdsds5ay/VjKSNey9mNBr3fNODKd5QbtpjM07/2vaGMjuwckfxVg6jSoAjOGpjCip+KgzT2c6YpZ7To3dXAnx+XbYTxM125ZPtFLphLLrR1by+XNq7y7NIh8HgqIl+Nfs+FuR9pcM6FpNVJn2qJt7WxJfzUuERGaRkHzeuj1qsGshP39uP5fD7mBevKTupT4uSJYebsUMmgrZNF5YnhhG1jzjVT9Ebc5gTn+pZ1uf8Jpj2WkTXgbFHyaHWfPXGbuEKqjXObWiDDqKwLKtNOjJ+3e7/tkcJ5jTtl7wexrwuD/VL/ngscv3O2c/bzlOc99+HQP66MfpO+SKS7bdaoaqM+bjOWYM8raLSh3XFZ5FVI87a06G/49KPkrlMkizWXQ2GLbT8tayOnlaGine1PtZGbCNv/GQ0q5tqUpUzKSfpZAw709LQz4PqgeYlHZTOjNRXSb/KsbujEW0RoG8bGSY8rI19Vj0lrm9BZgzR2TjtNWRTyOE6kG8XBYl2D+yLfI8k9JYaPswZ+3+jjjBZPs4SrBrPwlLEz50RZ9FmD33oktc/zWWXZ7f5qqtS8xbtIk0/8GeqQ9ygZ+txV+2XB3fGkKnHRZJfEm+PhdGk4WhRE+m3vnxyo7oZowcY6GFqi/NQrc9fdJBIz+ZHnHEhy3c53s2dZwk2PZN86k9bSnp6d0Go9WV5M8cYT1eW7t9ODlLDcFVXPVMpj55fh5eNyC+RndrlUXs6u/LE85/qZ32T5d+e/9/mpzZM04H1Pksb2PG8Xx/ar2viC4JkqNPBUG7fvNHjp71gCmf7vv2v7s+9cu6+tATeuyTcSpE/s0f4bfP8bjPz1f4MRhtOHv8WZvv5vcQL8JgsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Yf4B7INt+Et8ensAAAAASUVORK5CYII="
+              class="card-img-top" alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title">My Adobe Stock</h5>
+              <p class="card-text"> "Inspiration at Your Fingertips: Discover a wealth of visually stunning images to
+                spark your next design masterpiece."</p>
+              <a href="https://stock.adobe.com/contributor/207051603/abidali?load_type=author&prev_url=detail"
+                class="btn btn-custom">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div data-aos="fade-down-right" class="card shadow p-3 mb-5 bg-white rounded">
+            <img
+              src="data:image/png;base64,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"
+              class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <h5 class="card-title"> My Shutterstock</h5>
+              <p class="card-text"> "Unlimited Possibilities: Unlock a world of creative potential with Shutterstock's
+                vast library of visuals for all your design needs."</p>
+              <a href="https://www.shutterstock.com/g/abidali" class="btn btn-custom">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid   cot" id="About">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About</h2>
+        <div class="rounded" style="background-color: white">
+
+
+          <p class="p-3 ">Welcome to our website, where we offer a unique 360-degree experience combining nature,
+            lifestyle, and history through our curated collection of Adobe Stock and Shutterstock photos. Immerse
+            yourself in breathtaking landscapes, vibrant lifestyles, and the rich tapestry of history. Our 360-degree
+            imagery allows you to step into these captivating scenes, providing an immersive and inspiring visual
+            journey. Whether you're a designer, marketer, or simply an enthusiast, our photo gallery will ignite your
+            creativity and transport you to new realms. Explore the wonders of nature, the richness of lifestyle, and
+            the depth of history on our website today.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6" id="Contact">
+        <h2>Contact</h2>
+
+
+        <form id="contact-form" action="" method="POST">
+          <input type="text" id="name" name="name" placeholder="Your Name">
+          <span id="name-error" class="error"></span>
+          <input type="email" id="email" name="email" placeholder="Your Email">
+          <span id="email-error" class="error"></span>
+          <textarea id="message" name="message" placeholder="Your Message"></textarea>
+          <span id="message-error" class="error"></span>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="footer position-botam;">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="copy">
+      &copy; 2022 Company Name. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

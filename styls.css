@@ -1,0 +1,183 @@
+
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar-custom {
+  background-color: #333;
+  /* Set the background color */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: #fff;
+  /* Set the text color */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #11a030;
+  /* Set the text color on hover */
+}
+
+.hero-banner {
+  position: relative;
+  padding: 100px 0;
+}
+
+.hero-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-banner .banner-content {
+  color: #ffffff;
+  max-width: 500%;
+
+}
+
+.hero-banner .banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.hero-banner .banner-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: image-animation 8s infinite;
+}
+
+
+
+
+
+
+
+.hero-banner .banner-image img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.hero-banner .banner-image img:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.hero-banner .banner-image img:nth-child(3) {
+  animation-delay: 6s;
+  animation: image-animation 9s infinite, image-fade s infinite;
+}
+
+@keyframes image-animation {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 1;
+  }
+
+  53.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes image-fade {
+  0% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 1;
+  }
+
+  66.66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited {
+  background-color: #4CAF50;
+}
+
+.btn-custom {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  /* Adjust the desired height */
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .social-icons a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer .copy {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
