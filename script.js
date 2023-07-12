@@ -1,52 +1,28 @@
-const form = document.getElementById('contact-form');
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email');
-    const messageInput = document.getElementById('message');
-    const nameError = document.getElementById('name-error');
-    const emailError = document.getElementById('email-error');
-    const messageError = document.getElementById('message-error');
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      clearErrors();
-
-      const nameValue = nameInput.value.trim();
-      const emailValue = emailInput.value.trim();
-      const messageValue = messageInput.value.trim();
-      let valid = true;
-
-      if (nameValue === '') {
-        nameError.textContent = 'Name is required';
-        valid = false;
-      }
-
-      if (emailValue === '') {
-        emailError.textContent = 'Email is required';
-        valid = false;
-      } else if (!isEmailValid(emailValue)) {
-        emailError.textContent = 'Invalid email format';
-        valid = false;
-      }
-
-      if (messageValue === '') {
-        messageError.textContent = 'Message is required';
-        valid = false;
-      }
-
-      if (valid) {
-        // Submit the form or perform any other desired action
-        form.reset();
-        alert('Form submitted successfully!');
-      }
-    });
-
-    function clearErrors() {
-      nameError.textContent = '';
-      emailError.textContent = '';
-      messageError.textContent = '';
+$(document).ready(function() {
+  $("#myForm").submit(function(event) {
+  event.preventDefault(); // Prevent form from submitting normally
+  
+  // Get form data
+  var formData = {
+    name: $("#name").val(),
+    email: $("#email").val(),
+    message: $("#message").val()
+  };
+  
+  // Send data to Google Sheet using AJAX
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbwCUZeJxvt0N43Y138MTvEH3o7E3Xq7IMbGBZ7YQUYEsfFhWXxOJYj3-qlcOTU4-7G2Bg/exec",
+    method: "POST",
+    dataType: "json",
+    data: formData,
+    success: function(response) {
+      // Handle successful submission
+      console.log(response);
+      alert("Form submitted successfully");
+      window.location.reload()
+  window.location.href ="index.html"
     }
-
-    function isEmailValid(email) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
-    }
+  });
+  $("#myForm")[0].reset();
+  });
+  });
