@@ -1,28 +1,33 @@
-$(document).ready(function() {
-  $("#myForm").submit(function(event) {
-  event.preventDefault(); // Prevent form from submitting normally
-  
-  // Get form data
+function submitForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  // Check if any of the fields are empty
+  if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+    alert("Please fill in all the required fields.");
+    return;
+  }
+
+  // Rest of the code to submit the form
   var formData = {
-    name: $("#name").val(),
-    email: $("#email").val(),
-    message: $("#message").val()
+    'name': name,
+    'email': email,
+    'message': message
   };
-  
-  // Send data to Google Sheet using AJAX
+
+  $("#loading").show(); // Show loading spinner
+
   $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbwCUZeJxvt0N43Y138MTvEH3o7E3Xq7IMbGBZ7YQUYEsfFhWXxOJYj3-qlcOTU4-7G2Bg/exec",
-    method: "POST",
-    dataType: "json",
+    url: 'https://script.google.com/macros/s/AKfycbwHintgbf1QzPLkiaLwyzPztbuoosRzOTyi2OpLiEw87wt4qcHq_S2AoackeKTT9kZHeA/exec',
+    type: 'POST',
     data: formData,
     success: function(response) {
-      // Handle successful submission
-      console.log(response);
-      alert("Form submitted successfully");
-      window.location.reload()
-  window.location.href ="index.html"
+      $("#loading").hide(); // Hide loading spinner
+      alert("Form submitted successfully!\n\nName: " + name + "\nEmail: " + email + "\nMessage: " + message);
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
     }
   });
-  $("#myForm")[0].reset();
-  });
-  });
+}

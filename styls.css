@@ -172,7 +172,7 @@ textarea {
   border-radius: 4px;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: #4CAF50;
   color: white;
   cursor: pointer;
@@ -180,4 +180,13 @@ input[type="submit"] {
 
 .error {
   color: red;
+}
+
+#loading {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
