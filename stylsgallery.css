@@ -1,0 +1,74 @@
+body{
+  background-color:  #021629;
+}
+
+.photo-gallery {
+  color:#313437;
+  background-color:  #021629;
+}
+
+.photo-gallery p {
+  color:#fafcfd;
+}
+
+.photo-gallery h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color: #ffcc00;
+  
+}
+
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:58px auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom:0;
+}
+
+.photo-gallery .photos {
+  padding-bottom:20px;
+}
+
+.photo-gallery .item {
+  padding-bottom:30px;
+}
+.img-fluid{
+  border-radius: 10px;
+  border: 5px solid rgb(255, 255, 255);
+}
+
+
+.navbar-custom {
+  background-color: #333;
+  /* Set the background color */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: #fff;
+  /* Set the text color */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #ddc90f;
+  /* Set the text color on hover */
+}
+.intro{
+  margin-top: 200px;
+  max-width: 100%;
+  background-color: #4e4e4b;
+  border-radius: 20px;
+  border: 5px solid rgb(5, 172, 33);
+}
