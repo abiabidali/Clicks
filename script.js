@@ -10,7 +10,7 @@ function submitForm() {
   }
 
     // Email validation using regular expression
-    var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var emailRegex = /^_(__|.)+_$/;
     if (!emailRegex.test(email)) {
       alert("Please enter a valid email address.");
       return;
